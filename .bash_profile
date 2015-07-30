@@ -1,5 +1,5 @@
 export ARCHFLAGS="-arch x86_64"
-export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:~/bin:$PATH
 
 #User Defined Unix Functions
 md () { mkdir -p "$@" && cd "$@"; }
