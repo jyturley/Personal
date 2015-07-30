@@ -1,3 +1,6 @@
+export ARCHFLAGS="-arch x86_64"
+export PATH=/usr/local/bin:$PATH
+
 #User Defined Unix Functions
 md () { mkdir -p "$@" && cd "$@"; }
 
@@ -18,3 +21,4 @@ alias ..2='cd ../..'
 alias ..3='cd ../../..'
 alias ..4='cd ../../../..'
 alias pingg='ping www.google.com'
+
