@@ -5,8 +5,10 @@ export PATH=/usr/local/bin:$PATH
 md () { mkdir -p "$@" && cd "$@"; }
 
 #PS1
-CYAN='\[\e[1;36m\]'
-PS1='\[\e[1;36m\][\@]\h:\W \$ \[\e[0m\]'
+PS1="\[\e[0;36m\]\u@\h \[\e[0;32m\]\w\[\e[0m\]\n♤  "
+if [ -n "$SSH_CLIENT" ]; then
+        PS1="(ssh) $PS1"
+fi
 export PS1
 
 #ALIASES
