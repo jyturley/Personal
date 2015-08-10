@@ -11,6 +11,8 @@ if [ -n "$SSH_CLIENT" ]; then
 fi
 export PS1
 
+export P4CONFIG=~/.p4config
+
 #ALIASES
 alias slime='open -a "Sublime Text"'
 alias speedtest='wget cachefly.cachefly.net/100mb.test -O /dev/null'
