@@ -17,7 +17,5 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 	GITCONFIG=${DIR}.gitconfig
 	ls $GITCONFIG && ln -s $GITCONFIG ~/.gitconfig
 
-	source ~/.vimrc
 	source ~/.bash_profile
-	source ~/.gitconfig
 fi
