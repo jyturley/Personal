@@ -17,5 +17,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 	GITCONFIG=${DIR}.gitconfig
 	ls $GITCONFIG && ln -s $GITCONFIG ~/.gitconfig
 
+	echo "sourcing bash_profile"
 	source ~/.bash_profile
+	echo "Done!"
 fi
