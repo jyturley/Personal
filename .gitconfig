@@ -10,3 +10,5 @@
 [user]
 	name = jyturley
 	email = jyturley@gmail.com
+[push]
+	default = simple
