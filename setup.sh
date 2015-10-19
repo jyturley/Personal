@@ -4,6 +4,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 DIR=$DIR/
 BASH_PROFILE=""
 VIMRC=""
+GITCONFIG=""
 if [[ "$OSTYPE" == "darwin"* ]]; then
 	echo "OSX"
 	echo $DIR
@@ -12,6 +13,11 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 	
 	VIMRC=${DIR}.vimrc
 	ls $VIMRC && ln -s $VIMRC ~/.vimrc
+
+	GITCONFIG=${DIR}.gitconfig
+	ls $GITCONFIG && ln -s $GITCONFIG ~/.gitconfig
+
 	source ~/.vimrc
 	source ~/.bash_profile
+	source ~/.gitconfig
 fi
