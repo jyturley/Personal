@@ -30,7 +30,7 @@ fi
 brew update
 brew install coreutils
 brew install findutils
-brew install bash
+brew install wget
 brew cleanup
 
 echo "Done!"
