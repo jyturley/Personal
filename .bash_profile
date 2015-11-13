@@ -26,4 +26,4 @@ alias ..3='cd ../../..'
 alias ..4='cd ../../../..'
 alias pingg='ping www.google.com'
 alias filetree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'"
-
+alias dropbox='open ~/Dropbox/'

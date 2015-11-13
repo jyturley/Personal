@@ -33,13 +33,7 @@ fi
 brew update
 brew install coreutils
 brew install findutils
-brew install bash
-
-brew tap homebrew/dupes
-brew install homebrew/dupes/grep
-
-$PATH=$(brew --prefix coreutiles)/libexec/gnubin:$PATH
-
+brew install wget
 brew cleanup
 
 echo "Done!"
