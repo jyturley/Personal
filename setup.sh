@@ -22,6 +22,9 @@ echo "linking .gitconfig file..."
 GITCONFIG=${DIR}.gitconfig
 ls $GITCONFIG && ln -s $GITCONFIG ~/.gitconfig
 
+echo "linking files in /bin"
+ln -s ${DIR}bin/gh.sh /usr/local/bin/gh
+
 if test ! $(which brew); then
 	echo "Installing homebrew..."
 	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
